@@ -1,0 +1,10 @@
+writel, readl, io_address
+
+comparable to ioremap?
+
+play with writel and readl in the morning
+
+GPIO_BASE = 0x0, anything you access with io_address can be GPIO_BASE + ""
+
+
+
