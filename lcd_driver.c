@@ -253,7 +253,7 @@ static ssize_t lcd_write(struct file *file, const char *buf, size_t count, loff_
 
 
 /*
-
+   Release all GPIO pins when not needed anymore
 */
 static void pin_release(void)
 {
@@ -369,6 +369,7 @@ static void __exit gpio_lcd_exit(void)
 module_init(gpio_lcd_init);
 module_exit(gpio_lcd_exit);
 
+//Basic module information
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR(SYSTIMER_MOD_AUTH);
 MODULE_DESCRIPTION(SYSTIMER_MOD_DESCR);
